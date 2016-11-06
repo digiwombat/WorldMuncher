@@ -1,0 +1,30 @@
+{
+  "name": "WorldMuncher",
+  "version": "0.1.0",
+  "description": "A cross-platform World Building program.",
+  "repository": "https://github.com/digiwombat/world-muncher.git",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js",
+    "dist": "build"
+  },
+  "keywords": [
+    "writing",
+    "tools"
+  ],
+  "author": "Randall Fitzgerald <randall@dasaku.net> (https://randallfitzgerald.net)",
+  "license": "MIT",
+  "dependencies": {
+    "electron-window-state": "^3.1.0",
+    "fs-extra": "^1.0.0",
+    "jquery": "^3.1.1",
+    "jquery-textcomplete": "^1.7.3",
+    "lodash": "^4.16.6",
+    "medium-editor": "^5.22.1",
+    "zip-vfs": "^1.0.2"
+  },
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-builder": "^5.2.1"
+  }
+}

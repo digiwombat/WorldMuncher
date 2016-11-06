@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>World Muncher</title>
+	<link rel="stylesheet" href="styles/fonts.css">
+	<link rel="stylesheet" href="styles/font-awesome.css">
+	<link rel="stylesheet" href="styles/medium-editor.min.css">
+	<link rel="stylesheet" href="styles/medium-tim.css">
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="header-menu">
+				<button id="menu-button" class="fa fa-fw fa-map hvr-overline-reveal"><span>World Muncher</span></button>
+				<div class="dropdown-content">
+					<a href="#">New</a>
+					<a href="#">Open...</a>
+					<hr class="separator" />
+					<a href="#">Save</a>
+					<a href="#">Save As...</a>
+					<hr class="separator" />
+					<a href="#">Exit</a>
+				</div>
+			</div>
+			<div id="header-chrome-buttons">
+				<button id="min-button" class="fa fa-fw fa-window-minimize"></button>
+				<button id="max-button" class="fa fa-fw fa-window-maximize"></button>
+				<button id="close-button" class="fa fa-fw fa-window-close"></button>
+			</div>
+		</div>
+		<div id="section-bar">
+			<div id="top-section">
+				<a style="margin-top: 10px;" class="person-link" id="people">
+					<span class="fa-stack fa-fw fa-lg">
+						<i class="fa fa-users fa-stack-1x"></i>
+						<span class="tooltiptext">People</span>
+					</span>
+				</a>
+				<a class="place-link" id="places">
+					<span class="fa-stack fa-fw fa-lg">
+						<i class="fa fa-globe fa-stack-1x"></i>
+						<span class="tooltiptext">Places</span>
+					</span>
+				</a>
+				<a class="thing-link" id="things">
+					<span class="fa-stack fa-fw fa-lg">
+						<i class="fa fa-shield fa-stack-1x"></i>
+						<span class="tooltiptext">Things</span>
+					</span>
+				</a>
+			</div>
+			<a href="#settings">
+				<span class="fa-stack fa-fw fa-lg">
+					<i class="fa fa-gear fa-stack-1x"></i>
+					<span class="tooltiptext">Settings</span>
+				</span>
+			</a>
+		</div>
+		<div id="list-bar">
+			<ul id="list-holder">
+			</ul>
+			<div id="list-tools">
+				<span id="list-type">People</span>
+				<div id="add-item">
+					<span class="fa-stack fa-fw fa-lg">
+						<i class="fa fa-plus-square fa-stack-1x"></i>
+					</span>
+				</div>
+				<div id="remove-item">
+					<span class="fa-stack fa-fw fa-lg">
+						<i class="fa fa-trash fa-stack-1x"></i>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div id="main-area">
+			<div id="person-container">
+				<div class="row">
+					<div id="person_id" class="person-field col col-1 big"></div>
+					<div id="person_name" placeholder="Name" contenteditable="true" class="person-field col col-11 editable-nobar big"></div>
+				</div>
+				<div class="row" style="margin-top: 30px;">
+					<div class="col col-9">
+						<div class="row">
+							<div id="person_age" placeholder="Age" contenteditable="true" class="person-field col col-6 editable-nobar"></div>
+							<div id="person_gender" placeholder="Gender" contenteditable="true" class="person-field col col-6 editable-nobar"></div>
+						</div>
+						<div class="row">
+							<div id="person_height" placeholder="Height" contenteditable="true" class="person-field col col-6 editable-nobar"></div>
+							<div id="person_weight" placeholder="Weight" contenteditable="true" class="person-field col col-6 editable-nobar"></div>
+						</div>
+						<div class="row">
+							<div id="person_from_place" data-autocomplete-spy placeholder="From" contenteditable="true" class="person-field col col-6 editable-nobar ac-place"></div>
+							<div id="person_current_place" data-autocomplete-spy placeholder="Currently In" contenteditable="true" class="person-field col col-6 editable-nobar ac-place"></div>
+						</div>
+						<div class="row">
+							<div id="person_first_appearance" data-autocomplete-spy placeholder="First Appearance" contenteditable="true" class="person-field col col-6 editable-nobar ac-place"></div>
+							<div id="person_last_appearance" data-autocomplete-spy placeholder="Last Appearance" contenteditable="true" class="person-field col col-6 editable-nobar ac-place"></div>
+						</div>
+						<div class="row">
+							<div id="person_status" data-autocomplete-spy placeholder="Status" contenteditable="true" class="person-field col col-12 editable-nobar ac-place"></div>
+						</div>
+					</div>
+					<div class="col col-3">
+						<div class="image-upload">
+							<input id="file-input" type="file"/>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="margin-top: 30px;">
+					<div class="big title">Description</div>
+					<div id="person_description" data-autocomplete-spy placeholder="Description" contenteditable="true" class="person-field editable"><p></p></div>
+				</div>
+				<div class="row" style="margin-top: 30px;">
+					<div class="big title">Personality</div>
+					<div id="person_personality" data-autocomplete-spy placeholder="Personality" contenteditable="true" class="person-field editable"><p></p></div>
+				</div>
+				<div class="row" style="margin-top: 30px;">
+					<div class="big title">Background</div>
+					<div id="person_background" data-autocomplete-spy placeholder="Background" contenteditable="true" class="person-field editable"><p></p></div>
+				</div>
+			</div>
+			<div id="place-container">
+				<div class="row">
+					<div id="place_id" class="col col-1 big"></div>
+					<div id="place_name" placeholder="Name" contenteditable="true" class="place-field col col-11 editable-nobar big"></div>
+				</div>
+				<div class="row" style="margin-top: 30px;">
+					<div class="big title">Located In</div>
+					<select id="place_parent" class="place-field col col-12">
+						<option value="" disabled selected>Parent City</option>
+					</select>
+				</div>
+				<div class="row" style="margin-top: 30px;">
+					<div class="big title">Description</div>
+					<div id="place_description" data-autocomplete-spy placeholder="Description" contenteditable="true" class="place-field editable"></div>
+				</div>
+			</div>
+			<div id="thing-container">
+			</div>
+			
+			
+		</div>
+	</div>
+	<div id="openModal" class="modal">
+		<div>
+			<a href="#close" title="Exit WorldMuncher" id="modal_close" class="close"><i class="fa fa-fw fa-times"></i></a>
+			<p>
+				<button id="new_world">New World</button>
+			</p>
+			<p>
+				<button id="load_world">Load World</button>
+			</p>
+		</div>
+	</div>
+	<script src="lib/functions.js"></script>
+</body>
+</html>

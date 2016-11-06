@@ -1,0 +1,46 @@
+{
+	"people": [
+		{
+			"person_id": 1,
+			"person_name": "New Person",
+			"person_age": "Unknown",
+			"person_gender": "Unknown",
+			"person_height": "",
+			"person_weight": "",
+			"person_hair_color": "",
+			"person_eye_color": "",
+			"person_from_place": "",
+			"person_current_place": "",
+			"person_description": "<p></p>",
+			"person_personality": "<p></p>",
+			"person_background": "<p></p>",
+			"person_status": "",
+			"person_first_appearance": "",
+			"person_last_appearance": ""
+		}
+	],
+	"places": [
+		{
+			"place_id": 1,
+			"place_name": "New Place",
+			"place_description": "<p></p>",
+			"place_map": "",
+			"place_parent": "",
+			"place_ruler": ""
+		}
+	],
+	"things": [
+		{
+			"thing_id": 1,
+			"thing_name": "New Thing",
+			"thing_description": "<p></p>"
+		}
+	],
+	"settings": [
+		{
+			"setting_id": 1,
+			"option": "",
+			"value": ""
+		}
+	]
+}
