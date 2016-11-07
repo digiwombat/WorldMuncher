@@ -11,9 +11,9 @@
 			"person_eye_color": "",
 			"person_from_place": "",
 			"person_current_place": "",
-			"person_description": "<p></p>",
-			"person_personality": "<p></p>",
-			"person_background": "<p></p>",
+			"person_information": "",
+			"person_personality": "",
+			"person_background": "",
 			"person_status": "",
 			"person_first_appearance": "",
 			"person_last_appearance": ""
@@ -23,7 +23,7 @@
 		{
 			"place_id": 1,
 			"place_name": "New Place",
-			"place_description": "<p></p>",
+			"place_description": "",
 			"place_map": "",
 			"place_parent": "",
 			"place_ruler": ""
@@ -33,7 +33,7 @@
 		{
 			"thing_id": 1,
 			"thing_name": "New Thing",
-			"thing_description": "<p></p>"
+			"thing_description": ""
 		}
 	],
 	"settings": [

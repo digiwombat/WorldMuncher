@@ -20,7 +20,7 @@
     "jquery": "^3.1.1",
     "jquery-textcomplete": "^1.7.3",
     "lodash": "^4.16.6",
-    "medium-editor": "^5.22.1",
+    "trumbowyg": "^2.3.0",
     "zip-vfs": "^1.0.2"
   },
   "devDependencies": {
