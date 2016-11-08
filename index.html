@@ -8,28 +8,31 @@
 	<link rel="stylesheet" href="styles/font-awesome.css">
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="node_modules/trumbowyg/dist/ui/trumbowyg.css">
-	<link rel="stylesheet" href="node_modules/croppie/croppie.css">
 </head>
 
 <body>
 	<div id="container">
-		<div id="header">
-			<div id="header-menu">
-				<button id="menu-button" class="fa fa-fw fa-map hvr-overline-reveal"><span>World Muncher</span></button>
-				<div class="dropdown-content">
-					<a href="#">New</a>
-					<a href="#">Open...</a>
-					<hr class="separator" />
-					<a href="#">Save</a>
-					<a href="#">Save As...</a>
-					<hr class="separator" />
-					<a href="#">Exit</a>
+		<div id="header" class="row">
+			<div class="col col-2">
+				<div id="header-menu">
+					<button id="menu-button" class="fa fa-fw fa-map hvr-overline-reveal"><span>World Muncher</span></button>
+					<div class="dropdown-content">
+						<a class="new-world">New</a>
+						<a class="load-world">Open...</a>
+						<hr class="separator" />
+						<a class="exit-button">Exit</a>
+					</div>
 				</div>
 			</div>
-			<div id="header-chrome-buttons">
-				<button id="min-button" class="fa fa-fw fa-window-minimize"></button>
-				<button id="max-button" class="fa fa-fw fa-window-maximize"></button>
-				<button id="close-button" class="fa fa-fw fa-window-close"></button>
+			<div class="col col-8">
+				<div id="current-file"></div>
+			</div>
+			<div class="col col-2">
+				<div id="header-chrome-buttons">
+					<button id="min-button" class="fa fa-fw fa-window-minimize"></button>
+					<button id="max-button" class="fa fa-fw fa-window-maximize"></button>
+					<button id="close-button" class="fa fa-fw fa-window-close exit-button"></button>
+				</div>
 			</div>
 		</div>
 		<div id="section-bar">
@@ -53,7 +56,7 @@
 					</span>
 				</a>
 			</div>
-			<a href="#settings">
+			<a style="display:none;">
 				<span class="fa-stack fa-fw fa-lg">
 					<i class="fa fa-gear fa-stack-1x"></i>
 					<span class="tooltiptext">Settings</span>
@@ -141,6 +144,14 @@
 				</div>
 			</div>
 			<div id="thing-container">
+				<div class="row">
+					<div id="thing_id" class="col col-1 big"></div>
+					<div id="thing_name" placeholder="Name" contenteditable="true" class="thing-field col col-11 editable-nobar big"></div>
+				</div>
+				<div class="row" style="margin-top: 30px;">
+					<div class="big title">Description</div>
+					<div id="thing_description" data-autocomplete-spy placeholder="Description" contenteditable="true" class="thing-field editable"></div>
+				</div>
 			</div>
 			
 			
@@ -148,12 +159,12 @@
 	</div>
 	<div id="openModal" class="modal">
 		<div>
-			<a href="#close" title="Exit WorldMuncher" id="modal_close" class="close"><i class="fa fa-fw fa-times"></i></a>
+			<a href="#close" title="Exit WorldMuncher" id="modal_close" class="exit-button close"><i class="fa fa-fw fa-times"></i></a>
 			<p>
-				<button id="new_world">New World</button>
+				<button class="new-world" id="new_world">New World</button>
 			</p>
 			<p>
-				<button id="load_world">Load World</button>
+				<button class="load-world" id="load_world">Load World</button>
 			</p>
 		</div>
 	</div>

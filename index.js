@@ -1,11 +1,6 @@
 const {app, BrowserWindow} = require('electron')
 const windowStateKeeper = require('electron-window-state');
 require('electron-context-menu')({
-	prepend: params => [{
-		label: 'Rainbow',
-		// only show it when right-clicking images
-		visible: params.mediaType === 'image'
-	}],
 	showInspectElement: false
 });
 let win
@@ -32,7 +27,7 @@ function createWindow () {
 	win.loadURL(`file://${__dirname}/index.html#openModal`)
 
 	// Open the DevTools.
-	win.webContents.openDevTools()
+	//win.webContents.openDevTools()
 
 	// Emitted when the window is closed.
 	win.on('closed', () => {
