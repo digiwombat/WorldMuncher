@@ -442,15 +442,6 @@ hr.separator
 	outline: none;
 }
 
-/*#main-area .editable
-{
-	margin: 10px 20px !important;
-	border-left: 1px #777777 dotted;
-	min-height: 60px;
-	padding: 8px;
-	font-size: 14px;
-}*/
-
 #main-area .editable p
 {
 	margin: 0;
@@ -458,6 +449,7 @@ hr.separator
 	margin-bottom: 8px;
 	text-indent: 15px;
 	text-align: justify;
+	font-size: 14px;
 }
 
 #main-area .editable a
