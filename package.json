@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "start": "electron index.js",
-    "dist": "build"
+	"pack": "build --dir",
+	"dist": "build"
   },
   "keywords": [
     "writing",
@@ -28,5 +29,35 @@
   "devDependencies": {
     "electron": "^1.4.1",
     "electron-builder": "^5.2.1"
-  }
+  },
+	"build": {
+		"asar": false,
+		"compression": "maximum",
+		"appId": "org.digiwombat.worldmuncher",
+		"category": "public.app-category.productivity",
+		"fileAssociations": [{"ext": "wmnch", "name": "WorldMuncher File"}],
+		"dmg": {
+			"contents": [
+				{
+					"x": 110,
+					"y": 150
+				},
+				{
+					"x": 240,
+					"y": 150,
+					"type": "link",
+					"path": "/Applications"
+				}
+			]
+		},
+		"win": {
+			"target": "nsis"
+		},
+		"linux": {
+			"target": [
+				"AppImage",
+				"deb"
+			]
+		}
+	}
 }
