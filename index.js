@@ -21,7 +21,6 @@ function createWindow () {
 	});
 
 	mainWindowState.manage(win);
-	//win = new BrowserWindow({width: 1280, height: 720})
 
 	// and load the index.html of the app.
 	win.loadURL(`file://${__dirname}/index.html#openModal`)
