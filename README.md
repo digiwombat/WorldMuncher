@@ -1,5 +1,5 @@
 #World Muncher
-An FOSS world munching program made with Electron.
+An FOSS World Building program made with Electron.
 
 Fork it, fix it, do whatever. I'll gladly roll in code changes.
 
