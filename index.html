@@ -55,6 +55,12 @@
 						<span class="tooltiptext">Things</span>
 					</span>
 				</a>
+				<a id="notes">
+					<span class="fa-stack fa-fw fa-lg">
+						<i class="fa fa-sticky-note fa-stack-1x"></i>
+						<span class="tooltiptext">Notes</span>
+					</span>
+				</a>
 			</div>
 			<a style="display:none;">
 				<span class="fa-stack fa-fw fa-lg">
@@ -135,7 +141,7 @@
 				<div class="row" style="margin-top: 30px;">
 					<div class="big title">Located In</div>
 					<select id="place_parent" class="place-field col col-12">
-						<option value="" selected>None</option>
+						<option value="" selected>Nowhere</option>
 					</select>
 				</div>
 				<div class="row" style="margin-top: 30px;">
@@ -153,8 +159,16 @@
 					<div id="thing_description" data-autocomplete-spy placeholder="Description" contenteditable="true" class="thing-field editable"></div>
 				</div>
 			</div>
-			
-			
+			<div id="note-container">
+				<div class="row">
+					<div id="note_id" class="col col-1 big"></div>
+					<div id="note_name" placeholder="Note" contenteditable="true" class="note-field col col-11 editable-nobar big"></div>
+				</div>
+				<div class="row" style="margin-top: 30px;">
+					<div id="note_description" data-autocomplete-spy placeholder="Note Text" contenteditable="true" class="note-field editable"></div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 	<div id="openModal" class="modal">

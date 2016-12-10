@@ -37,11 +37,19 @@
 			"thing_description": ""
 		}
 	],
+	"notes": [
+		{
+			"note_id": 1,
+			"note_name": "New Note",
+			"note_description": ""
+		}
+	],
 	"settings": [
 		{
 			"setting_id": 1,
 			"option": "",
 			"value": ""
 		}
-	]
+	],
+	"dbversion": "0.5.0"
 }
