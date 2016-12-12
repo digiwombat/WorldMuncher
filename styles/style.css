@@ -60,7 +60,7 @@ img[src=""]
 	padding: 0px;
 	display: flex;
 	flex-flow: row wrap;
-	align-content: flex-start
+	align-content: flex-start;
 }
 
 #header
@@ -77,6 +77,8 @@ img[src=""]
 	color: #F1F1F1;
 	font-size: 14px;
 	cursor: default;
+	z-index: 999;
+	width: 100%;
 }
 
 #header-menu
@@ -554,6 +556,16 @@ ul.textcomplete-dropdown li
 ul.textcomplete-dropdown li.active
 {
 	background-color: #90B0AE;
+}
+
+.trumbowyg-fullscreen
+{
+	top: 32px !important;
+}
+
+.trumbowyg-box.trumbowyg-fullscreen
+{
+	background-color: #2B303B !important;
 }
 
 /*#region Modal*/
