@@ -371,6 +371,11 @@ hr.separator
 	border-bottom: 0;
 }
 
+#list-holder li:nth-child(even)
+{
+	background-color: #3c3F41;
+}
+
 #list-holder li:hover
 {
 	background: #2B303B;
