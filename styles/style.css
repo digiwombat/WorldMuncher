@@ -422,9 +422,9 @@ hr.separator
 	background-color: transparent;
 	color: #EEEEEE;
 	border: 0;
-	border-bottom: 3px solid #2B303B;
+	border-bottom: 2px solid #90B0AE;
 	height: 100%;
-	width: 100%;
+	width: 75%;
 	font-size: 16px;
 	padding: 0 5px;
 	outline: 0;
