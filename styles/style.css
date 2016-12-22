@@ -384,7 +384,7 @@ hr.separator
 
 #list-holder .list-active
 {
-	background: #2B303B;
+	background: #2B303B !important;
 }
 
 #list-holder .person-image, #list-holder .place-image, #list-holder .thing-image, #list-holder .note-image
