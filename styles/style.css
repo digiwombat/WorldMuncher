@@ -601,6 +601,12 @@ ul.textcomplete-dropdown li.active
 	background-color: #2B303B !important;
 }
 
+#vercheck a
+{
+	color: #C0846E;
+}
+
+
 /*#region Modal*/
 .modal
 {
