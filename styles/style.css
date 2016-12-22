@@ -417,6 +417,24 @@ hr.separator
 	background-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMTUyIDEyNDh2NDE2aC05MjhxLTQwIDAtNjgtMjh0LTI4LTY4di0xMzQ0cTAtNDAgMjgtNjh0NjgtMjhoMTM0NHE0MCAwIDY4IDI4dDI4IDY4djkyOGgtNDE2cS00MCAwLTY4IDI4dC0yOCA2OHptMTI4IDMyaDM4MXEtMTUgODItNjUgMTMybC0xODQgMTg0cS01MCA1MC0xMzIgNjV2LTM4MXoiLz48L3N2Zz4=");
 }
 
+#filter
+{
+	background-color: transparent;
+	color: #EEEEEE;
+	border: 0;
+	border-bottom: 3px solid #2B303B;
+	height: 100%;
+	width: 100%;
+	font-size: 16px;
+	padding: 0 5px;
+	outline: 0;
+}
+
+#filter::-webkit-input-placeholder
+{
+	#color: #777777;
+}
+
 #main-area
 {
 	flex: 3;
