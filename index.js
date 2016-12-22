@@ -5,6 +5,7 @@ require('electron-context-menu')({
 });
 let win
 
+
 function createWindow () {
 	let mainWindowState = windowStateKeeper({
 		defaultWidth: 1280,
@@ -32,6 +33,20 @@ function createWindow () {
 	win.on('closed', () => {
 		win = null
 	})
+}
+
+
+const shouldQuit = app.makeSingleInstance((commandLine, workingDirectory) => {
+	if (win)
+	{
+		if (win.isMinimized()) win.restore()
+		win.webContents.send('new', commandLine);
+		win.focus()
+	}
+})
+
+if (shouldQuit) {
+	app.quit()
 }
 
 app.on('ready', createWindow)
