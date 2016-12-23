@@ -37,25 +37,25 @@
 		</div>
 		<div id="section-bar">
 			<div id="top-section">
-				<a style="margin-top: 10px;" class="person-link" id="people">
+				<a style="margin-top: 10px;" class="person-link" id="people-sel">
 					<span class="fa-stack fa-fw fa-lg">
 						<i class="fa fa-users fa-stack-1x"></i>
 						<span class="tooltiptext">People</span>
 					</span>
 				</a>
-				<a class="place-link" id="places">
+				<a class="place-link" id="places-sel">
 					<span class="fa-stack fa-fw fa-lg">
 						<i class="fa fa-globe fa-stack-1x"></i>
 						<span class="tooltiptext">Places</span>
 					</span>
 				</a>
-				<a class="thing-link" id="things">
+				<a class="thing-link" id="things-sel">
 					<span class="fa-stack fa-fw fa-lg">
 						<i class="fa fa-shield fa-stack-1x"></i>
 						<span class="tooltiptext">Things</span>
 					</span>
 				</a>
-				<a id="notes">
+				<a id="notes-sel">
 					<span class="fa-stack fa-fw fa-lg">
 						<i class="fa fa-sticky-note fa-stack-1x"></i>
 						<span class="tooltiptext">Notes</span>
@@ -70,8 +70,6 @@
 			</a>
 		</div>
 		<div id="list-bar">
-			<ul id="list-holder">
-			</ul>
 			<div id="list-tools">
 				<div id="list-type"><input type="text" id="filter" placeholder="People" /></div>
 				<div id="add-item">
@@ -85,6 +83,9 @@
 					</span>
 				</div>
 			</div>
+			<ol id="list-holder">
+			</ol>
+
 		</div>
 		<div id="main-area">
 			<div id="person-container">
@@ -141,12 +142,6 @@
 					<div id="place_name" placeholder="Name" contenteditable="true" class="place-field col col-11 editable-nobar big"></div>
 				</div>
 				<div class="row" style="margin-top: 30px;">
-					<div class="big title">Located In</div>
-					<select id="place_parent" class="place-field col col-12">
-						<option value="" selected>Nowhere</option>
-					</select>
-				</div>
-				<div class="row" style="margin-top: 30px;">
 					<div class="big title">Description</div>
 					<div id="place_description" data-autocomplete-spy placeholder="Description" contenteditable="true" class="place-field editable"></div>
 				</div>
@@ -186,6 +181,9 @@
 			</p>
 		</div>
 	</div>
+	<script src="lib/jqueryfix.js"></script>
+	<script src="lib/jquery-ui.min.js"></script>
+	<script src="lib/nestable.js"></script>
 	<script src="lib/hermite.js"></script>
 	<script src="lib/scrollTo.js"></script>
 	<script src="lib/functions.js"></script>

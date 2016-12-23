@@ -216,6 +216,7 @@ hr.separator
 #section-bar a
 {
 	display: block;
+	cursor: pointer;
 }
 
 #section-bar a span, .fa-stack
@@ -293,6 +294,11 @@ hr.separator
 	box-sizing: border-box;
 }
 
+#add-item, #remove-item
+{
+	cursor: pointer;
+}
+
 #list-type
 {
 	flex: 1 100%;
@@ -300,17 +306,21 @@ hr.separator
 	padding: 10px;
 }
 
-#list-holder
+#list-holder, #list-holder ol
 {
 	display: block;
 	height: calc(100% - 40px);
-	overflow: hidden;
+	overflow: auto;
 	overflow-y: scroll;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	max-width: 350px;
-	width: 350px;
+}
+
+#list-holder ol
+{
+	overflow: hidden;
 }
 
 #list-holder h3
@@ -318,6 +328,9 @@ hr.separator
 	font: bold 20px "Open Sans";
 	padding: 0;
 	margin: 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 #list-holder li p
@@ -340,14 +353,41 @@ hr.separator
 	color: #777777;
 }
 
-#list-holder li
+#list-holder .li-color, #list-holder li ol li .li-color
 {
+	height: 48px;
 	padding: 10px;
-	overflow: auto;
+	display: block;
+	background: #444749;
 	transition: background-color 0.2s linear;
 	border-bottom: 1px #3c3F41 solid;
+	-webkit-user-select: none;
+	overflow: hidden;
 }
 
+#list-holder ol li
+{
+	margin-left: 20px;
+	width: calc(100% - 20px);
+}
+
+#list-holder li ol li .li-color
+{
+
+	transition: background-color 0.2s linear;
+	border-bottom: 1px #3c3F41 solid;
+	background-color: #55595C;
+	-webkit-user-select: none;
+
+}
+
+li.ui-sortable-placeholder
+{
+	border: 1px dashed #90B0AE;
+	visibility: visible !important;
+}
+
+/*
 #list-holder li.place-child
 {
 	box-sizing: border-box;
@@ -364,25 +404,22 @@ hr.separator
 {
 	box-sizing: border-box;
 	border-left: 35px #222 solid;
-}
+}*/
+
+
 
 #list-holder li:last-of-type
 {
 	border-bottom: 0;
 }
 
-#list-holder li:nth-child(even)
-{
-	background-color: #3c3F41;
-}
-
-#list-holder li:hover
+#list-holder .li-color:hover
 {
 	background: #2B303B;
 	cursor: pointer;
 }
 
-#list-holder .list-active
+#list-holder .list-active.li-color
 {
 	background: #2B303B !important;
 }
@@ -433,6 +470,7 @@ hr.separator
 #filter::-webkit-input-placeholder
 {
 	#color: #777777;
+	text-transform: capitalize;
 }
 
 #main-area
