@@ -294,7 +294,7 @@ hr.separator
 	box-sizing: border-box;
 }
 
-#add-item, #remove-item
+#add-item, #remove-item, #collapse-all
 {
 	cursor: pointer;
 }
@@ -304,6 +304,25 @@ hr.separator
 	flex: 1 100%;
 	height: 20px;
 	padding: 10px;
+}
+
+.li-color:only-child .disclose
+{
+	visibility: hidden;
+}
+
+.disclose
+{
+	visibility: visible;
+	position:absolute;
+	bottom: 5px;
+	left: 45px;
+	transition: all 0.1s linear;
+}
+
+.expanded .disclose
+{
+	transform:rotate(90deg);
 }
 
 #list-holder, #list-holder ol
@@ -318,9 +337,19 @@ hr.separator
 	max-width: 350px;
 }
 
+#list-holder > li:last-child
+{
+	margin-bottom: 51px;
+}
+
 #list-holder ol
 {
 	overflow: hidden;
+}
+
+#list-holder .collapsed ol
+{
+	display: none;
 }
 
 #list-holder h3
@@ -363,6 +392,7 @@ hr.separator
 	border-bottom: 1px #3c3F41 solid;
 	-webkit-user-select: none;
 	overflow: hidden;
+	position: relative;
 }
 
 #list-holder ol li
@@ -385,32 +415,6 @@ li.ui-sortable-placeholder
 {
 	border: 1px dashed #90B0AE;
 	visibility: visible !important;
-}
-
-/*
-#list-holder li.place-child
-{
-	box-sizing: border-box;
-	border-left: 15px #222 solid;
-}
-
-#list-holder li.place-second-child
-{
-	box-sizing: border-box;
-	border-left: 25px #222 solid;
-}
-
-#list-holder li.place-third-child
-{
-	box-sizing: border-box;
-	border-left: 35px #222 solid;
-}*/
-
-
-
-#list-holder li:last-of-type
-{
-	border-bottom: 0;
 }
 
 #list-holder .li-color:hover
@@ -459,9 +463,10 @@ li.ui-sortable-placeholder
 	background-color: transparent;
 	color: #EEEEEE;
 	border: 0;
-	border-bottom: 2px solid #90B0AE;
+	border-bottom: 1px solid #90B0AE;
+	border-right: 1px solid #90B0AE;
 	height: 100%;
-	width: 75%;
+	width: 95%;
 	font-size: 16px;
 	padding: 0 5px;
 	outline: 0;
