@@ -1,6 +1,6 @@
 {
   "name": "WorldMuncher",
-  "version": "0.7.1",
+  "version": "0.7.3",
   "description": "A cross-platform World Building program.",
   "repository": "https://github.com/digiwombat/world-muncher.git",
   "main": "index.js",
