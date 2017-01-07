@@ -1,6 +1,6 @@
 {
   "name": "WorldMuncher",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "A cross-platform World Building program.",
   "repository": "https://github.com/digiwombat/world-muncher.git",
   "main": "index.js",
@@ -16,6 +16,7 @@
   "author": "Randall Fitzgerald <randall@dasaku.net> (https://randallfitzgerald.net)",
   "license": "MIT",
   "dependencies": {
+	"diacritics": "^1.2.3",
 	"electron-editor-context-menu": "^1.1.1",
 	"electron-spell-check-provider": "^1.1.0",
 	"electron-window-state": "^3.1.0",
