@@ -1,6 +1,8 @@
 #World Muncher
 An FOSS World Building program made with Electron.
 
+Download the [latest release](https://github.com/digiwombat/WorldMuncher/releases).
+
 Fork it, fix it, do whatever. I'll gladly roll in code changes.
 
 There is no ideological or political stance requirement to contribute to this project.  
