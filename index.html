@@ -20,6 +20,8 @@
 						<a class="new-world">New</a>
 						<a class="load-world">Open...</a>
 						<hr class="separator" />
+						<a class="save-world">Open...</a>
+						<hr class="separator" />
 						<a class="exit-button">Exit</a>
 					</div>
 				</div>
@@ -95,9 +97,9 @@
 		</div>
 		<div id="main-area">
 			<div id="person-container">
+				<div id="person_id" class="person-field col col-1 big" style="display:none;"></div>
 				<div class="row">
-					<div id="person_id" class="person-field col col-1 big"></div>
-					<div id="person_name" placeholder="Name" contenteditable="true" spellcheck="false" class="person-field col col-11 editable-nobar big"></div>
+					<div id="person_name" placeholder="Name" contenteditable="true" spellcheck="false" class="person-field col col-12 editable-nobar big"></div>
 				</div>
 				<div class="row" style="margin-top: 30px;">
 					<div class="col col-9">
@@ -129,8 +131,8 @@
 				</div>
 				<div class="row" style="margin-top: 30px;">
 					<div class="col col-6">
-						<div class="big title">Information</div>
-						<div id="person_information" data-autocomplete-spy placeholder="Information" contenteditable="true" class="person-field editable"></div>
+						<div class="big title">About</div>
+						<div id="person_information" data-autocomplete-spy placeholder="About" contenteditable="true" class="person-field editable"></div>
 					</div>
 					<div class="col col-6">
 						<div class="big title">Personality</div>
@@ -138,14 +140,14 @@
 					</div>
 				</div>
 				<div class="row" style="margin-top: 30px;">
-					<div class="big title">Background</div>
-					<div id="person_background" data-autocomplete-spy placeholder="Background" contenteditable="true" class="person-field editable"><p></p></div>
+					<div class="big title">Notes</div>
+					<div id="person_background" data-autocomplete-spy placeholder="Notes" contenteditable="true" class="person-field editable"><p></p></div>
 				</div>
 			</div>
 			<div id="place-container">
+				<div id="place_id" class="col col-1 big" style="display:none;"></div>
 				<div class="row">
-					<div id="place_id" class="col col-1 big"></div>
-					<div id="place_name" spellcheck="false" placeholder="Name" contenteditable="true" class="place-field col col-11 editable-nobar big"></div>
+					<div id="place_name" spellcheck="false" placeholder="Name" contenteditable="true" class="place-field col col-12 editable-nobar big"></div>
 				</div>
 				<div class="row" style="margin-top: 30px;">
 					<div class="big title">Description</div>
@@ -153,9 +155,9 @@
 				</div>
 			</div>
 			<div id="thing-container">
+				<div id="thing_id" class="col col-1 big" style="display:none;"></div>
 				<div class="row">
-					<div id="thing_id" class="col col-1 big"></div>
-					<div id="thing_name" spellcheck="false" placeholder="Name" contenteditable="true" class="thing-field col col-11 editable-nobar big"></div>
+					<div id="thing_name" spellcheck="false" placeholder="Name" contenteditable="true" class="thing-field col col-12 editable-nobar big"></div>
 				</div>
 				<div class="row" style="margin-top: 30px;">
 					<div class="big title">Description</div>
@@ -163,9 +165,9 @@
 				</div>
 			</div>
 			<div id="note-container">
+				<div id="note_id" class="col col-1 big" style="display:none;"></div>
 				<div class="row">
-					<div id="note_id" class="col col-1 big"></div>
-					<div id="note_name" spellcheck="false" placeholder="Note" contenteditable="true" class="note-field col col-11 editable-nobar big"></div>
+					<div id="note_name" spellcheck="false" placeholder="Note" contenteditable="true" class="note-field col col-12 editable-nobar big"></div>
 				</div>
 				<div class="row" style="margin-top: 30px;">
 					<div id="note_description" data-autocomplete-spy placeholder="Note Text" contenteditable="true" class="note-field editable"></div>

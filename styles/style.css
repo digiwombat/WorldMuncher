@@ -325,6 +325,11 @@ hr.separator
 	transform:rotate(90deg);
 }
 
+.expanded ol .collapsed .disclose
+{
+	transform:rotate(0deg);
+}
+
 #list-holder, #list-holder ol
 {
 	display: block;
@@ -375,6 +380,10 @@ hr.separator
 #list-holder p span
 {
 	color: #90B0AE;
+	max-width: 48%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 #list-holder p span strong
