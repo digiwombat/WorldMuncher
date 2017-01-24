@@ -142,11 +142,6 @@ img[src=""]
 	z-index: 10;
 }
 
-#header-menu .dropdown-content.hide
-{
-	visibility: hidden;
-}
-
 #header-menu:hover .dropdown-content
 {
 	visibility: visible;
