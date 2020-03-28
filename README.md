@@ -1,4 +1,4 @@
-#World Muncher
+# World Muncher
 An FOSS World Building program made with Electron.
 
 Download the [latest release](https://github.com/digiwombat/WorldMuncher/releases).
