@@ -5,8 +5,8 @@ html,body
 	color: #eee;
 	height: 100%;
 	width: 100%;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 
 ::-webkit-scrollbar
@@ -483,7 +483,7 @@ li.ui-sortable-placeholder
 
 #filter::-webkit-input-placeholder
 {
-	#color: #777777;
+	color: #777777;
 	text-transform: capitalize;
 }
 
