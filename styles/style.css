@@ -9,6 +9,10 @@ html,body
 	padding: 0;
 }
 
+div::placeholder {
+	text-transform: capitalize;
+}
+
 ::-webkit-scrollbar
 {
 	width: 7px;  /* for vertical scrollbars */
@@ -500,7 +504,7 @@ li.ui-sortable-placeholder
 	overflow-y: auto;
 }
 
-#person-container, #place-container, #thing-container, #note-container
+#person-container, #place-container, #thing-container, #note-container, .container
 {
 	width: 100%;
 	min-height: calc(100% - 50px);
